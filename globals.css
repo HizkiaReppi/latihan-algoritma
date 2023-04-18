@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.inputWrapper input {
+  border: none;
+  border-bottom: 1px solid;
+  width: 100%;
+  padding: 10px 1px;
+  outline: none;
+}
+
+.btn {
+  border: none;
+  padding: 8px 15px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  align-self: end;
+  margin: 8px 0;
+}
+
+.errorMessage {
+  font-size: 13px;
+  color: red;
+  font-style: italic;
+}

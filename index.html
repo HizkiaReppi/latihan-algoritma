@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobby List</title>
+    <link rel="stylesheet" href="./globals.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Hobby List</h1>
+      <div class="wrapper">
+        <h3>Input Hobby</h3>
+        <div class="inputWrapper">
+          <input type="text" name="inputHobby" id="inputHobby" placeholder="Masukan Hobby"/>
+        </div>
+        
+        <p class="errorMessage" id="errorInputMessage"></p>
+        
+        <button class="btn" onclick="addHobby()">Tambah</button>
+      </div>
+      <div class="wrapper">
+        <h3>Hobby List</h3>
+        <br />
+        <div id="results"></div>
+      </div>
+      
+      <div class="wrapper">
+        <h3>Switch Index</h3>
+        <div class="inputWrapper">
+          <label for="from">From</label>
+          <input type="number" name="from" id="from" placeholder="From" />
+        </div>
+        <div class="inputWrapper">
+          <label for="to">To</label>
+          <input type="number" name="to" id="to" placeholder="To"/>
+        </div>
+        
+        <p class="errorMessage" id="errorMessage"></p>
+        
+        <button class="btn" onclick="validation()">Swich</button>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
